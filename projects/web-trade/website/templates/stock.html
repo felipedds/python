@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% block title %}Stock{%endblock %}
+
+{% block content %}
+<h1>This is the Stock page</h1>
+<div id='chart1' class='chart1'></div>
+<div id='chart2' class='chart2'></div>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+    var graph1 = {{graph1JSON | safe}};
+    Plotly.plot('chart1', graph1, {});
+
+    var graph2 = {{graph2JSON | safe}};
+    Plotly.plot('chart2', graph2, {});
+</script>
+{%endblock %}

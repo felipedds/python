@@ -1,0 +1,23 @@
+-Criar ambiente virtual
+virtualenv -p python3 venv
+
+-Acessar ambiente virtual
+. venv/bin/activate
+source venv/bin/activate
+source /home/felipe/Desktop/Python/MetaTrader/venv/bin/activate
+
+-Instalar pacotes no ambiente virtual
+pip3 install pandas ta scikit-learn matplotlib statsmodels seaborn MetaTrader5
+pip install -r requirements.txt
+
+-Gera txt com as bibl. instaladas
+pip3 freeze > requirements.txt
+
+-Desativar ambiente virtual
+deactivate
+
+-Create .exe
+pyinstaller --onefile [.py]
+
+
+PIN = n@ti

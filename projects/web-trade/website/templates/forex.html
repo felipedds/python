@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% block title %}Forex{%endblock %}
+
+{% block content %}
+<h1>This is the Forex page</h1>
+
+<div id='chart1' class='chart1'></div>
+<div id='chart2' class='chart2'></div>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+    var graph = {{graphJSON1 | safe}};
+    Plotly.plot('chart1', graph, {});
+
+    var graph = {{graphJSON2 | safe}};
+    Plotly.plot('chart2', graph, {});
+</script>
+{%endblock %}
