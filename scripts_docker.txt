@@ -1,0 +1,29 @@
+- Build and run the Docker image
+docker build -t [NAME] .
+docker run -it [NAME]
+
+- Delete unused data
+docker system prune
+
+- Delete all containers:
+docker rm -f $(docker container ps -a -q)
+
+- Delete all images:
+docker rmi $(docker images -a -q)
+
+- Delete all networks:
+docker network ls | grep "bridge"
+docker network rm $(docker network ls | grep "bridge" | awk '/ / { print $1 }')
+
+- List containers
+docker container ls
+docker container ls -a
+
+- Run a container from image Ubuntu
+docker container run -it ubuntu /bin/bash
+
+- Run a daemonized container from image Nginx
+docker container run -d nginx
+
+- Run a container from image Mongo
+docker container run -e MONGO_INITDB_ROOT_USERNAME=mongouser -e MONGO_INITDB_ROOT_PASSWORD=mongopwd -d -p "27017:27017" mongohttps://politisches-archiv.diplo.de/invenio/main.xhtml#

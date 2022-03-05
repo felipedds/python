@@ -2,4 +2,6 @@
 
 ## Principles:
 - Single Responsibility
-- Open-Closed 
+- Open-Closed
+- Liskov Substitution
+- Interface Segregation

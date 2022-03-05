@@ -10,10 +10,6 @@ print(list_nested)
 list_three_multiple = [x for x in range(100) if x % 3 == 0]
 print(list_three_multiple)
 
-x = 1
-y = 1
-z = 2
-n = 3
-
+x, y, z, n = 1, 1, 2, 3
 list_comprehension = list([i, j, k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if (i + j + k) != n)
 print(list_comprehension)
