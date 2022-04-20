@@ -1,0 +1,12 @@
+git add .
+git commit -m "commit"
+git push
+git checkout -b "feature"
+git push --set-upstream origin feature
+
+git add .
+git commit -m "to update commands readme"
+git push origin feature
+
+git rm -rf --cached .
+

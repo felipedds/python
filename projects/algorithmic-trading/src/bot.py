@@ -48,8 +48,7 @@ class StrategyRSI(Forex):
         
     def load_data(self): # Load dataset.
         dataset = Forex.load_data(self, self.ticker, self.time_frame)
-        dataset = dataset.dropna()
-        return pd.DataFrame(dataset)
+        return pd.DataFrame(dataset.dropna())
     
     def rsi(self, dataset, period): # Indicator RSI.
         self.data = dataset.dropna()
