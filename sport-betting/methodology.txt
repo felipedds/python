@@ -1,7 +1,0 @@
-* Methodology (Thesis, Model and Method)
-
-- Create an thesis (Research this thesis(Youtube and etc.))
-- Define criterious (Entry odd, understand the cenary of game, if the probability is interesting, etc.)
-- Test the model (database, volume of games[minimun 200 matches], put little money)
-- Adjust the method (verify if the method is lucrative, adjust the criterious)
-- Apply the method
